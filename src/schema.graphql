@@ -1,0 +1,29 @@
+"A datetime string with format `Y-m-d H:i:s`, e.g. `2018-05-23 13:43:32`."
+scalar DateTime @scalar(class: "Nuwave\\Lighthouse\\Schema\\Types\\Scalars\\DateTime")
+
+type Query {
+  files: [File!]! @all
+  file(id: Int! @eq): File @find
+}
+
+
+"Account of a person who utilizes this application."
+type File {
+    "Unique primary key."
+    id: ID!
+
+    "Unique primary key."
+    filename: String!
+
+    "UUID of file"
+    uuid: String!
+
+    "Unique primary key."
+    size: String!
+
+    "When the account was created."
+    created_at: DateTime!
+
+    "When the account was last updated."
+    updated_at: DateTime!
+}
