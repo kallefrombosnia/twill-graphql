@@ -1,29 +1,109 @@
 "A datetime string with format `Y-m-d H:i:s`, e.g. `2018-05-23 13:43:32`."
 scalar DateTime @scalar(class: "Nuwave\\Lighthouse\\Schema\\Types\\Scalars\\DateTime")
+scalar JSON @scalar(class: "MLL\\GraphQLScalars\\JSON")
 
 type Query {
+
+  "Query on Block module"
+  blocks: [Block!]! @all
+  block(id: Int! @eq): Block @find
+
+  "Query on Feature module"
+  features: [Feature!]! @all
+  feature(id: Int! @eq): Feature @find
+
+  "Query on File module"
   files: [File!]! @all
   file(id: Int! @eq): File @find
+
+  "Query on Media module"
+  medias: [Media!]! @all @softDeletes
+  media(id: Int! @eq): Media @find
+  
+  "Query on Setting module"
+  settings: [Setting!]! @all @softDeletes
+  setting(id: Int! @eq): Setting @find
+
+  "Query on Tag module"
+  tags: [Tag!]! @all 
+  tag(id: Int! @eq): Tag @find
+
+  "Query on User module"
+  users: [User!]! @all @softDeletes
+  user(id: Int! @eq): User @find
+
 }
 
 
-"Account of a person who utilizes this application."
+type Block {
+  id: ID!
+  blockable_id: String!
+  blockable_type: String!
+  position: Int!
+  content: JSON!
+  type: String!
+  child_key: String!
+  parent_id: Int!
+}
+
+type Feature {
+  id: ID!
+  feature_id: String!
+  feature_type: String!
+  bucket_key: String!
+  position: Int!
+  starred: Boolean!
+  created_at: DateTime
+  updated_at: DateTime
+}
+
 type File {
-    "Unique primary key."
-    id: ID!
-
-    "Unique primary key."
-    filename: String!
-
-    "UUID of file"
-    uuid: String!
-
-    "Unique primary key."
-    size: String!
-
-    "When the account was created."
-    created_at: DateTime!
-
-    "When the account was last updated."
-    updated_at: DateTime!
+  id: ID!
+  filename: String!
+  uuid: String!
+  size: String!
+  created_at: DateTime
+  updated_at: DateTime
 }
+
+type Media {
+  id: ID!
+  uuid: String!
+  alt_text: String
+  width: Int!
+  height: Int!
+  caption: String
+  filename: String!
+  created_at: DateTime
+  updated_at: DateTime
+}
+
+type Setting {
+  id: ID!
+  key: String
+  section: String
+  created_at: DateTime
+  updated_at: DateTime
+}
+
+type Tag {
+  id: ID!
+  namespace: String!
+  slug: String!
+  name: String!
+  count: Int!
+}
+
+type User {
+  id: ID!
+  published: Int!
+  name: String!
+  email: String!
+  role: String!
+  title: String
+  description: String
+  language: String
+  created_at: DateTime
+  updated_at: DateTime
+}
+
