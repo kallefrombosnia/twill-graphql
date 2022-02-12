@@ -18,7 +18,6 @@ class GraphqlServiceProvider extends PackageServiceProvider
         $package
             ->name('twill-graphql')
             ->hasConfigFile()
-            ->hasViews()
             ->hasCommand(DeployCommand::class);
     }
 }

@@ -21,6 +21,7 @@ class DeployCommand extends Command
     public function handle(): int
     {
 
+        // Implement force logic later
         $force = $this->option('force');
 
         $lighthouse = config('lighthouse.schema.register');
@@ -182,7 +183,7 @@ class DeployCommand extends Command
      */
     private function file_compare($local, $distant) : bool
     {
-        
+
         // Check if file last edit time values are equal
         return filemtime($local) === filemtime($distant) ? true : false;
     }
