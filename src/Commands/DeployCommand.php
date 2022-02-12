@@ -12,30 +12,6 @@ class DeployCommand extends Command
 
     public $description = 'Deploys Twill\'s GraphQL schemas';
 
-    private $local = '';
-    private $distant_default = '';
-    private $distant_twill = '';
-    private $lighthouse = null;
-
-    /**
-     * Create a new command instance.
-     *
-     * @return void
-     */
-    /*
-    public function __construct()
-    {
-
-        parent::__construct();
-
-        $this->lighthouse = config('lighthouse.schema.register');
-        $this->local = base_path('vendor\kallefrombosnia\twill-graphql\src\schema.graphql');
-        $this->distant_default = base_path('graphql\schema.graphql');
-        $this->distant_twill = base_path('graphql\twill.graphql');
-
-        
-    }
-    */
 
     /**
      * Execute the console command.
@@ -121,7 +97,7 @@ class DeployCommand extends Command
     /**
      * Checks if a folder exist and return canonicalized absolute pathname (long version)
      * @param string $folder the path being checked.
-     * @return mixed returns the canonicalized absolute pathname on success otherwise FALSE is returned
+     * @return string|bool returns the canonicalized absolute pathname on success otherwise FALSE is returned
      */
     private function folder_exist($folder) : string | bool
     {
@@ -135,7 +111,7 @@ class DeployCommand extends Command
     /**
      * Checks if a file exist and return canonicalized absolute pathname (long version)
      * @param string $file the path being checked.
-     * @return mixed returns the canonicalized absolute pathname on success otherwise FALSE is returned
+     * @return string|bool returns the canonicalized absolute pathname on success otherwise FALSE is returned
      */
     private function file_exist($file) : string | bool
     {
@@ -148,7 +124,7 @@ class DeployCommand extends Command
      * Checks if a local and vendor files are equal (last time changed)
      * @param string $local the file path being checked.
      * @param string $distant the fiel path being checked.
-     * @return mixed returns bool
+     * @return bool returns bool
      */
     private function file_compare($local, $distant) : bool
     {
