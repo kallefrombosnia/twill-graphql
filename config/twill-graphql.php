@@ -1,5 +1,8 @@
 <?php
 // config for Twill/Graphql
 return [
-    'test' => 'test'
+    'schema' => [
+        'twill' => base_path('graphql\twill.graphql'),
+        'local' => base_path('vendor\kallefrombosnia\twill-graphql\src\schema.graphql'),
+    ]
 ];

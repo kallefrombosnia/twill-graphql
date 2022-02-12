@@ -34,7 +34,7 @@ type Query {
 
 }
 
-
+"https://github.com/area17/twill/blob/2.x/src/Models/Block.php"
 type Block {
   id: ID!
   blockable_id: String!
@@ -46,6 +46,7 @@ type Block {
   parent_id: Int!
 }
 
+"https://github.com/area17/twill/blob/2.x/src/Models/Feature.php"
 type Feature {
   id: ID!
   feature_id: String!
@@ -57,6 +58,7 @@ type Feature {
   updated_at: DateTime
 }
 
+"https://github.com/area17/twill/blob/2.x/src/Models/File.php"
 type File {
   id: ID!
   filename: String!
@@ -66,6 +68,7 @@ type File {
   updated_at: DateTime
 }
 
+"https://github.com/area17/twill/blob/2.x/src/Models/Media.php"
 type Media {
   id: ID!
   uuid: String!
@@ -78,6 +81,7 @@ type Media {
   updated_at: DateTime
 }
 
+"https://github.com/area17/twill/blob/2.x/src/Models/Setting.php"
 type Setting {
   id: ID!
   key: String
@@ -86,6 +90,7 @@ type Setting {
   updated_at: DateTime
 }
 
+"https://github.com/area17/twill/blob/2.x/src/Models/Tag.php"
 type Tag {
   id: ID!
   namespace: String!
@@ -94,6 +99,7 @@ type Tag {
   count: Int!
 }
 
+"https://github.com/area17/twill/blob/2.x/src/Models/User.php"
 type User {
   id: ID!
   published: Int!

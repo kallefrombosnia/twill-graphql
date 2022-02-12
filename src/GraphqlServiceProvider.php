@@ -4,7 +4,7 @@ namespace Twill\Graphql;
 
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Twill\Graphql\Commands\GraphqlCommand;
+use Twill\Graphql\Commands\DeployCommand;
 
 class GraphqlServiceProvider extends PackageServiceProvider
 {
@@ -19,6 +19,6 @@ class GraphqlServiceProvider extends PackageServiceProvider
             ->name('twill-graphql')
             ->hasConfigFile()
             ->hasViews()
-            ->hasCommand(GraphqlCommand::class);
+            ->hasCommand(DeployCommand::class);
     }
 }
