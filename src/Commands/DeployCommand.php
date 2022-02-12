@@ -26,6 +26,7 @@ class DeployCommand extends Command
         $lighthouse = config('lighthouse.schema.register');
         $local = base_path('vendor\kallefrombosnia\twill-graphql\src\schema.graphql');
         
+        $local_twill = base_path('vendor\kallefrombosnia\twill-graphql\src\twill.graphql');
         $distant_twill = base_path('graphql\twill.graphql');
 
         // Check if lighthouse config is submitted
@@ -45,12 +46,12 @@ class DeployCommand extends Command
         try {
 
             // Check if folder exists
-            if(!$this->folder_exist($distant_default)){
+            if(!$this->folder_exist(dirname($distant_default))){
 
                 // Try to create graphql directory
                 if(!mkdir(dirname($distant_default), 0777, true)){
 
-                    $this->error('Couldn\' create ./graphql directory. Check permissions.');
+                    $this->error('Couldn\'t create ./graphql directory. Check permissions.');
 
                     return self::FAILURE;
                 }
@@ -60,24 +61,77 @@ class DeployCommand extends Command
             if($this->file_exist($distant_default)){
 
                 // Compare file edit 
-                if($this->file_compare($local, $distant_default)){
+                if(!$this->file_compare($local, $distant_default)){
 
                     // Ask user to overwrite the file 
-                    if ($this->confirm('This will overwrite schema in ' . $distant_default . '. Do you wish to continue?', false)) {
-                        //
+                    if ($this->confirm('This will overwrite schema in ' . realpath($distant_default) . '. Do you wish to continue?')) {
+
+                        // Handle file copy when we overwrite file
+                        if(copy($local, $distant_default)){
+
+                            $this->comment(realpath($distant_default) . ' successfully deployed to ' . realpath($distant_default));
+
+                        }else{
+
+                            $this->error('Something went wrong while deploying to ' . $distant_default);
+
+                            return self::FAILURE;
+                        }
                     }
+
                 }
 
             }else{
 
                 // Handle file copy when file doesn't exists
                 if(copy($local, $distant_default)){
-
-                    $this->comment($distant_default . ' successfully deployed to ' . $distant_default);
+                
+                    $this->comment(realpath($distant_default) . ' successfully deployed to ' . realpath($distant_default));
 
                 }else{
 
-                    $this->error('Something went wrong while deploying to ' . $distant_default);
+                    $this->error('Something went wrong while deploying to ' . realpath($distant_default));
+
+                    return self::FAILURE;
+                }
+            }
+
+            // Check if twill.graphql exists
+            if($this->file_exist($distant_twill)){
+
+                // Compare file edit 
+                if(!$this->file_compare($local_twill, $distant_twill)){
+
+                    // Ask user to overwrite the file 
+                    if ($this->confirm('twill.schema differs from vendor twill.graphql file. Publishing will overwrite existing. ' . realpath($distant_twill) . '. Do you wish to continue?', false)) {
+
+                        // Handle file copy when file doesn't exists
+                        if(copy($local_twill, $distant_twill)){
+
+                            $this->comment(realpath($local_twill) . ' successfully deployed to ' . realpath($distant_twill));
+
+                        }else{
+
+                            $this->error('Something went wrong while deploying to ' . realpath($distant_twill));
+
+                            return self::FAILURE;
+                        }
+                    }
+
+                }else{
+
+                }
+
+            }else{
+
+                // Handle file copy when file doesn't exists
+                if(copy($local_twill, $distant_twill)){
+
+                    $this->comment(realpath($local_twill) . ' successfully deployed to ' . realpath($distant_twill));
+
+                }else{
+
+                    $this->error('Something went wrong while deploying to ' . realpath($distant_twill));
 
                     return self::FAILURE;
                 }
