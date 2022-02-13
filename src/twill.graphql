@@ -66,6 +66,13 @@ type File {
   size: String!
   created_at: DateTime
   updated_at: DateTime
+  filepivot: FilePivot
+}
+
+"Optional file fields from fileable table"
+type FilePivot {
+  role: String
+  locale: String
 }
 
 "https://github.com/area17/twill/blob/2.x/src/Models/Media.php"
@@ -79,6 +86,20 @@ type Media {
   filename: String!
   created_at: DateTime
   updated_at: DateTime
+  pivot: MediaPivot
+}
+
+"Optional file fields from fileable table"
+type MediaPivot {
+  crop: String
+  role: String
+  crop_w: Int
+  crop_h: Int
+  crop_x: Int
+  crop_y: Int
+  lqip_data: String
+  ratio: String
+  metadatas: String
 }
 
 "https://github.com/area17/twill/blob/2.x/src/Models/Setting.php"

@@ -9,6 +9,10 @@ The project is heavily inspired by [twill-api](https://github.com/area17/twill-a
 
 Currently, only queries are supported, `mutations` will come after `@guard` implementation
 
+### Documentation
+
+Check the [documentation.](https://github.com/kallefrombosnia/twill-graphql/tree/master/docs)
+
 ### Technologies 
 
 This package uses [nuwave/lighthouse](https://github.com/nuwave/lighthouse) and [mll-lab/laravel-graphql-playground](https://github.com/mll-lab/laravel-graphql-playground) for providing easy access to models and playground UI for exploring server schemas and testing.
@@ -214,10 +218,9 @@ Result
 ```
 
 ### LICENSE
-
-MIT 
+[MIT](https://github.com/kallefrombosnia/twill-graphql/blob/master/LICENSE.md) 
 
 ### AUTHOR
-Izet Mulalic
+Izet Mulalić
 
     
