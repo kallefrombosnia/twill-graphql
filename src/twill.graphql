@@ -37,13 +37,14 @@ extend type Query {
 "https://github.com/area17/twill/blob/2.x/src/Models/Block.php"
 type Block {
   id: ID!
-  blockable_id: String!
-  blockable_type: String!
+  blockable_id: String
+  blockable_type: String
   position: Int!
   content: JSON!
   type: String!
-  child_key: String!
-  parent_id: Int!
+  child_key: String
+  parent_id: Int
+  editor_name: String
 }
 
 "https://github.com/area17/twill/blob/2.x/src/Models/Feature.php"
