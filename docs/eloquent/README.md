@@ -4,9 +4,10 @@ Documentation
 -----
 - [Eloquent relathionships](#eloquent-relathionships)
 - [Polymorphic relathionships](#polymorphic-relathionships)
+    - [Block](https://github.com/kallefrombosnia/twill-graphql/tree/master/docs/eloquent/polymorphic/BLOCK.md)
     - [File](https://github.com/kallefrombosnia/twill-graphql/tree/master/docs/eloquent/polymorphic/FILE.md)
     - [Media](https://github.com/kallefrombosnia/twill-graphql/tree/master/docs/eloquent/polymorphic/MEDIA.md)
-    - [Block](https://github.com/kallefrombosnia/twill-graphql/tree/master/docs/eloquent/polymorphic/BLOCK.md)
+    - [Tags](https://github.com/kallefrombosnia/twill-graphql/tree/master/docs/eloquent/polymorphic/TAGS.md)
 - [Twill methods](#twill-methods)
 
 
