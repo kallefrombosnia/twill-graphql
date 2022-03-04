@@ -3,6 +3,7 @@
 Documentation
 -----
 - [Eloquent relathionships](#eloquent-relathionships)
+    - [Revision](https://github.com/kallefrombosnia/twill-graphql/blob/master/docs/eloquent/REVISIONS.md)
 - [Polymorphic relathionships](#polymorphic-relathionships)
     - [Block](https://github.com/kallefrombosnia/twill-graphql/tree/master/docs/eloquent/polymorphic/BLOCK.md)
     - [File](https://github.com/kallefrombosnia/twill-graphql/tree/master/docs/eloquent/polymorphic/FILE.md)
