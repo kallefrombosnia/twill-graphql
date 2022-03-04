@@ -9,4 +9,6 @@ parameters:
     checkOctaneCompatibility: true
     checkModelProperties: true
     checkMissingIterableValueType: false
+    stubFiles:
+    - vendor/nuwave/lighthouse/_ide_helper.php
 

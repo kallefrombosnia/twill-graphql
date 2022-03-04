@@ -135,3 +135,13 @@ type User {
   updated_at: DateTime
 }
 
+"https://github.com/area17/twill/blob/2.x/src/Models/Behaviors/HasRevisions.php"
+type Revision {
+  id: ID!
+  category_id: Int!
+  user_id: Int!
+  payload: String!
+  created_at: DateTime
+  updated_at: DateTime
+}
+

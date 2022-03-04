@@ -82,8 +82,8 @@ And you are ready to go.
 
 ### Project roadmap
 
-- [ ] Create wrapper around Twill default models for relations
-- [ ] Add examples
+- [x] Create wrapper around Twill default models for relations
+- [x] Add examples
 - [ ] Write tests
 - [ ] Create composer package (publish)
 - [ ] Create guards example
