@@ -12,7 +12,7 @@
     processIsolation="false"
     stopOnFailure="false"
     executionOrder="random"
-    failOnWarning="true"
+    failOnWarning="false"
     failOnRisky="true"
     failOnEmptyTestSuite="true"
     beStrictAboutOutputDuringTests="true"
@@ -20,7 +20,7 @@
 >
     <testsuites>
         <testsuite name="Twill Test Suite">
-            <directory>tests</directory>
+            <file>tests/schema/FileTest.php</file>
         </testsuite>
     </testsuites>
     <coverage>

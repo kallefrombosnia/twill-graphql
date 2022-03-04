@@ -1,20 +1,22 @@
 <?php
 
-namespace Twill\Graphql\Tests;
+namespace Twill\Graphql\Tests\Schema;
 
-use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
 use Twill\Graphql\GraphqlServiceProvider;
+use Nuwave\Lighthouse\Testing\MakesGraphQLRequests;
+use Nuwave\Lighthouse\Testing\UsesTestSchema;
+use Nuwave\Lighthouse\Testing\MocksResolvers;
 
 class TestCase extends Orchestra
 {
+    use MakesGraphQLRequests;
+    use UsesTestSchema;
+    use MocksResolvers;
+
     protected function setUp(): void
     {
         parent::setUp();
-
-        Factory::guessFactoryNamesUsing(
-            fn (string $modelName) => 'Twill\\Graphql\\Database\\Factories\\'.class_basename($modelName).'Factory'
-        );
     }
 
     protected function getPackageProviders($app)
@@ -26,10 +28,12 @@ class TestCase extends Orchestra
 
     public function getEnvironmentSetUp($app)
     {
-        /*
-        config()->set('database.default', 'testing');
-
         
+        // Set lighthouse route name
+        config()->set('lighthouse.route.name', 'graphql');
+
+
+        /*
         $migration = include __DIR__.'/../database/migrations/create_twill-graphql_table.php.stub';
         $migration->up();
         */
