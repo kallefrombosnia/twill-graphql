@@ -39,7 +39,8 @@
     "autoload": {
         "psr-4": {
             "Twill\\Graphql\\": "src",
-            "Twill\\Graphql\\Database\\Factories\\": "database/factories"
+            "Twill\\Graphql\\Database\\Factories\\": "database/factories",
+            "Twill\\Graphql\\Tests\\": "tests"
         }
     },
     "autoload-dev": {
