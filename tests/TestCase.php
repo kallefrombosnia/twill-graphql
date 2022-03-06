@@ -25,6 +25,9 @@ use A17\Twill\TwillServiceProvider;
 use A17\Twill\Models\User;
 use Faker\Factory as Faker;
 
+// Seeders
+use Twill\Graphql\Tests\Database\Seeders\DatabaseSeeder;
+
 
 class TestCase extends Orchestra
 {
@@ -68,7 +71,7 @@ class TestCase extends Orchestra
         $this->setUpTwill();
 
         // Seed
-        $this->artisan('db:seed', ['class' => \Twill\Graphql\Tests\Database\Seeders\DatabaseSeeder::class]);
+        $this->artisan('db:seed', ['class' => DatabaseSeeder::class]);
 
     }
 
