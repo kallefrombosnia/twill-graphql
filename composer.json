@@ -17,6 +17,7 @@
     ],
     "require": {
         "php": "^8.0",
+        "area17/twill": "^2.7",
         "illuminate/contracts": "^8.73",
         "mll-lab/graphql-php-scalars": "^5.4",
         "mll-lab/laravel-graphql-playground": "^2.5",

@@ -20,7 +20,7 @@
 >
     <testsuites>
         <testsuite name="Twill Test Suite">
-            <file>tests/schema/FileTest.php</file>
+            <file>tests/Schema/FileTest.php</file>
         </testsuite>
     </testsuites>
     <coverage>
