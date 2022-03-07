@@ -36,6 +36,20 @@ class TestCase extends Orchestra
     use MocksResolvers;
 
     /**
+     * Indicates whether the default seeder should run before each test.
+     *
+     * @var bool
+     */
+    protected $seed = true;
+
+    /**
+     * Run a specific seeder before each test.
+     *
+     * @var string
+     */
+    protected $seeder = DatabaseSeeder::class;
+
+    /**
      * Twill consts for tests
      *
      * @var string
@@ -71,7 +85,7 @@ class TestCase extends Orchestra
         $this->setUpTwill();
 
         // Seed
-        $this->artisan('db:seed', ['class' => DatabaseSeeder::class]);
+        //$this->artisan('db:seed', ['class' => DatabaseSeeder::class]);
 
     }
 
