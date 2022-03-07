@@ -22,8 +22,8 @@ class FileablesSeeder extends Seeder
             'file_id' => 1,
             'fileable_id' => 1, 
             'fileable_type' => 'Twill\Graphql\Tests\Utils\Models\Category',
-            'role' => 'test',
-            'locale' => 'en'
+            'role' => 'single_file',
+            'locale' => 'sl'
         ]);
 
         // Fileable 2
@@ -34,8 +34,8 @@ class FileablesSeeder extends Seeder
             'file_id' => 2,
             'fileable_id' => 2, 
             'fileable_type' => 'Twill\Graphql\Tests\Utils\Models\Category',
-            'role' => 'test',
-            'locale' => 'en'
+            'role' => 'single_file',
+            'locale' => 'sl'
         ]);
 
         // Fileable 3
@@ -46,8 +46,8 @@ class FileablesSeeder extends Seeder
             'file_id' => 3,
             'fileable_id' => 2, 
             'fileable_type' => 'Twill\Graphql\Tests\Utils\Models\Category',
-            'role' => 'test',
-            'locale' => 'en'
+            'role' => 'single_file',
+            'locale' => 'sl'
         ]);
 
         // Fileable 4
@@ -58,8 +58,8 @@ class FileablesSeeder extends Seeder
             'file_id' => 4,
             'fileable_id' => 2, 
             'fileable_type' => 'Twill\Graphql\Tests\Utils\Models\Category',
-            'role' => 'test',
-            'locale' => 'en'
+            'role' => 'single_file',
+            'locale' => 'sl'
         ]);
 
         // Fileable 5
@@ -70,8 +70,8 @@ class FileablesSeeder extends Seeder
             'file_id' => 5,
             'fileable_id' => 2, 
             'fileable_type' => 'Twill\Graphql\Tests\Utils\Models\Category',
-            'role' => 'test',
-            'locale' => 'en'
+            'role' => 'single_file',
+            'locale' => 'sl'
         ]);
 
     }
