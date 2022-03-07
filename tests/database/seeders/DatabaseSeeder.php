@@ -1,6 +1,6 @@
 <?php
 
-namespace Twill\Graphql\Tests\Database\Seeders;
+namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
 

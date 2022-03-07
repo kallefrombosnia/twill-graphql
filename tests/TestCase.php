@@ -69,7 +69,7 @@ class TestCase extends Orchestra
         $this->setUpTwill();
 
         // Seed
-        $this->artisan('db:seed', ['class' => \Twill\Graphql\Tests\Database\Seeders\DatabaseSeeder::class]);
+        $this->artisan('db:seed', ['class' => \Database\Seeders\DatabaseSeeder::class]);
 
     }
 

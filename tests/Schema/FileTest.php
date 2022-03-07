@@ -3,12 +3,9 @@
 namespace Twill\Graphql\Tests\Schema;
 
 use Twill\Graphql\Tests\TestCase;
-use Illuminate\Foundation\Testing\RefreshDatabase;
 
 class FileTest extends TestCase
 {
-    //use RefreshDatabase;
-
 
     protected function setUp(): void
     {
