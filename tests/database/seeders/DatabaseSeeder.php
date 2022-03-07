@@ -14,9 +14,17 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         $this->call([
+            
+            // Default model seeder
             CategorySeeder::class,
+
+            // Files seeders
             FileSeeder::class,
-            FileablesSeeder::class
+            FileablesSeeder::class,
+
+            // Media seeders
+            MediaSeeder::class,
+            MediablesSeeder::class,
         ]);
     }
 }
