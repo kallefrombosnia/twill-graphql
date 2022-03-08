@@ -22,6 +22,7 @@
         <testsuite name="Twill Test Suite">
             <file>tests/Schema/FileTest.php</file>
             <file>tests/Schema/MediaTest.php</file>
+            <file>tests/Schema/TagsTest.php</file>
         </testsuite>
     </testsuites>
     <coverage>

@@ -30,8 +30,6 @@ type Category{
 
 Here we defined type for `Categories` which also has its own query definition.  
 
-Note here field `files`. That name should stay same and its connected to the Twills trait method [files()](https://github.com/area17/twill/blob/fe27672e8ba432b3d6b111df79b4827d0f2e7d03/src/Models/Behaviors/HasFiles.php#L15).
-
 Now lets query our model in playground.
 
 **All categories**

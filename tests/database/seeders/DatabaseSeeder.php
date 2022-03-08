@@ -25,6 +25,10 @@ class DatabaseSeeder extends Seeder
             // Media seeders
             MediaSeeder::class,
             MediablesSeeder::class,
+
+            // Tag seeders
+            TagSeeder::class,
+            TaggableSeeder::class
         ]);
     }
 }
