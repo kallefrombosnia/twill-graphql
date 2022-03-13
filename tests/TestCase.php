@@ -101,6 +101,9 @@ class TestCase extends Orchestra
         $config->set('database.default', self::DEFAULT_CONNECTION);
         $config->set('database.connections.' . self::DEFAULT_CONNECTION, $this->sqliteOptions());
 
+        // Views test dir
+        $config->set('view.paths', ['./tests/resources/views']);
+
         $config->set('lighthouse.namespaces', [
             'models' => [
                 'A17\\Twill\\Models',

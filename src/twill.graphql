@@ -40,8 +40,8 @@ type Block {
   blockable_id: String
   blockable_type: String
   position: Int!
-  content: JSON!
-  type: String!
+  content: String
+  type: String
   child_key: String
   parent_id: Int
   editor_name: String

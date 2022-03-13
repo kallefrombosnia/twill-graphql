@@ -18,4 +18,9 @@ class Category extends Model
         'description',
     ];
 
+    protected function getRevisionModel()
+    {
+        return 'Twill\\Graphql\\Tests\\Utils\\Models\\Revisions\\CategoryRevision';
+    }
+
 }

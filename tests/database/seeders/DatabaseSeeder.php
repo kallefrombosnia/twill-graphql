@@ -28,7 +28,13 @@ class DatabaseSeeder extends Seeder
 
             // Tag seeders
             TagSeeder::class,
-            TaggableSeeder::class
+            TaggableSeeder::class,
+
+            // Block seeder
+            BlockSeeder::class,
+
+            // Revision seeder
+            RevisionSeeder::class,
         ]);
     }
 }
