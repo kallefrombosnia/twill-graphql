@@ -1,7 +1,5 @@
 # Twill CMS GraphQL :telescope:
 
-## WIP - not stable
-
 Twill GraphQL provides easy access to query-specific fields from Twill CMS modules and user-defined modules with GraphQL.
 
 The project is heavily inspired by [twill-api](https://github.com/area17/twill-api)
@@ -26,9 +24,7 @@ Per default graphql endpoint serves on `/graphql` and playground is available on
 **From composer**
 
 ```sh
-The package is not yet submitted and is a matter of change.
-For development, you could manually download it and load it up in composer as dev-master  
-After that composer update should be run.
+composer require kallefrombosnia/twill-graphql
 ```
 
 
@@ -84,8 +80,8 @@ And you are ready to go.
 
 - [x] Create wrapper around Twill default models for relations
 - [x] Add examples
-- [ ] Write tests
-- [ ] Create composer package (publish)
+- [x] Write tests
+- [x] Create composer package (publish)
 - [ ] Create guards example
 - [ ] Create mutations
 - [ ] More tests
