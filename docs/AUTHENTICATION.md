@@ -11,3 +11,17 @@ Those directives provides us very easy way to protect our routes trough standard
 
 
 Best way to get the idea of implementation is to check their section for [Security](https://lighthouse-php.com/master/security/authentication.html).
+
+Twill Gate list:
+*   `list`
+*   `edit`
+*   `reorder`
+*   `publish`
+*   `feature`
+*   `delete`
+*   `duplicate`
+*   `upload`
+*   `manager-users`
+*   `edit-user`
+*   `publish-user`
+*   `impersonate`
