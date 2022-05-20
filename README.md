@@ -82,7 +82,7 @@ And you are ready to go.
 - [x] Add examples
 - [x] Write tests
 - [x] Create composer package (publish)
-- [ ] Create guards example
+- [x] Create guards example
 - [ ] Create mutations
 - [ ] More tests
 - [ ] TBA
