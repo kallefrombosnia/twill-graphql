@@ -13,6 +13,8 @@ Documentation & examples:
     *   [Delete][6]
 *   [Twill][2]
 
+For nested mutation which require relathionships check out [Lighthouse tutorial](https://lighthouse-php.com/master/eloquent/nested-mutations.html#return-types-required)
+
 
 [1]: https://github.com/kallefrombosnia/twill-graphql/tree/master/docs/mutations/modules
 [2]: https://github.com/kallefrombosnia/twill-graphql/tree/master/docs/mutations/twill

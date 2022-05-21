@@ -5,8 +5,6 @@ Twill GraphQL provides easy access to query-specific fields from Twill CMS modul
 The project is heavily inspired by [twill-api](https://github.com/area17/twill-api)
 
 
-Currently, only queries are supported, `mutations` will come after `@guard` implementation
-
 ### Documentation
 
 Check the [documentation.](https://github.com/kallefrombosnia/twill-graphql/tree/master/docs)
@@ -85,6 +83,8 @@ And you are ready to go.
 - [x] Create guards example
 - [ ] Create mutations
 - [ ] More tests
+- [ ] Subscriptions
+- [ ] Tests for subscribtions
 - [ ] TBA
 
 ### Query on Twill custom user models 
