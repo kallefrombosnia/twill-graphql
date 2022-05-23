@@ -16,10 +16,10 @@ Documentation & examples:
 For nested mutation which require relathionships check out [Lighthouse tutorial](https://lighthouse-php.com/master/eloquent/nested-mutations.html#return-types-required)
 
 
-[1]: https://github.com/kallefrombosnia/twill-graphql/tree/master/docs/mutations/modules
+[1]: https://github.com/kallefrombosnia/twill-graphql/tree/master/docs/mutations/module
 [2]: https://github.com/kallefrombosnia/twill-graphql/tree/master/docs/mutations/twill
-[3]: https://github.com/kallefrombosnia/twill-graphql/tree/master/docs/mutations/modules/CREATE.md
-[4]: https://github.com/kallefrombosnia/twill-graphql/tree/master/docs/mutations/modules/UPDATE.md
-[5]: https://github.com/kallefrombosnia/twill-graphql/tree/master/docs/mutations/modules/UPSERT.md
-[6]: https://github.com/kallefrombosnia/twill-graphql/tree/master/docs/mutations/modules/DELETE.md
+[3]: https://github.com/kallefrombosnia/twill-graphql/tree/master/docs/mutations/module/CREATE.md
+[4]: https://github.com/kallefrombosnia/twill-graphql/tree/master/docs/mutations/module/UPDATE.md
+[5]: https://github.com/kallefrombosnia/twill-graphql/tree/master/docs/mutations/module/UPSERT.md
+[6]: https://github.com/kallefrombosnia/twill-graphql/tree/master/docs/mutations/module/DELETE.md
 

@@ -7,6 +7,7 @@ Documentation
 -----
 - [Package documentation][1]
 - [Eloquent usage][2]
+- [Mutations][5]
 - [Direct usage][3]
 - [Authentication][4]
 - [Notes](#notes)
@@ -29,3 +30,4 @@ return [
 [2]: https://github.com/kallefrombosnia/twill-graphql/tree/master/docs/eloquent
 [3]: https://github.com/kallefrombosnia/twill-graphql/tree/master/docs/direct
 [4]: https://github.com/kallefrombosnia/twill-graphql/tree/master/docs/AUTHENTICATION.md
+[5]: https://github.com/kallefrombosnia/twill-graphql/tree/master/docs/mutations

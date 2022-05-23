@@ -20,6 +20,10 @@
 >
     <testsuites>
         <testsuite name="Twill Test Suite">
+            <file>tests/Schema/CreateMutationTest.php</file>
+            <file>tests/Schema/UpdateMutationTest.php</file>
+            <file>tests/Schema/UpsertMutationTest.php</file>
+            <file>tests/Schema/DeleteMutationTest.php</file>
             <file>tests/Schema/BlockTest.php</file>
             <file>tests/Schema/FileTest.php</file>
             <file>tests/Schema/MediaTest.php</file>
