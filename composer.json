@@ -17,7 +17,7 @@
     ],
     "require": {
         "php": "^8.0",
-        "area17/twill": "2.8.3",
+        "area17/twill": "2.8.4",
         "illuminate/contracts": "^8.73",
         "mll-lab/graphql-php-scalars": "^5.4",
         "mll-lab/laravel-graphql-playground": "^2.5",
@@ -33,7 +33,7 @@
         "phpstan/extension-installer": "^1.1",
         "phpstan/phpstan-deprecation-rules": "^1.0",
         "phpstan/phpstan-phpunit": "^1.0",
-        "phpunit/phpunit": "9.5",
+        "phpunit/phpunit": "9.4",
         "spatie/laravel-ray": "^1.26"
     },
     "autoload": {
