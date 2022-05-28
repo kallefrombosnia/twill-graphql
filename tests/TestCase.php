@@ -119,6 +119,9 @@ class TestCase extends Orchestra
             // | Debug::RETHROW_INTERNAL_EXCEPTIONS
             | DebugFlag::RETHROW_UNSAFE_EXCEPTIONS
         );
+
+        // Set twill to use integer
+        $config->set('twill.migrations_use_big_integers', false);
     }
 
     /**
