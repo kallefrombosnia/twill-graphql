@@ -16,6 +16,7 @@ class FileablesSeeder extends Seeder
     {
         // Fileable 1
         DB::table('fileables')->insert([
+            'id' => 1,
             'created_at' => '2022-02-06 18:49:16',
             'updated_at' => '2022-02-16 00:28:38',
             'deleted_at' => '',
@@ -28,6 +29,7 @@ class FileablesSeeder extends Seeder
 
         // Fileable 2
         DB::table('fileables')->insert([
+            'id' => 2,
             'created_at' => '2022-02-06 18:49:16',
             'updated_at' => '2022-02-16 00:28:38',
             'deleted_at' => '',
@@ -40,6 +42,7 @@ class FileablesSeeder extends Seeder
 
         // Fileable 3
         DB::table('fileables')->insert([
+            'id' => 3,
             'created_at' => '2022-02-06 18:49:16',
             'updated_at' => '2022-02-16 00:28:38',
             'deleted_at' => '',
@@ -52,6 +55,7 @@ class FileablesSeeder extends Seeder
 
         // Fileable 4
         DB::table('fileables')->insert([
+            'id' => 4,
             'created_at' => '2022-02-06 18:49:16',
             'updated_at' => '2022-02-16 00:28:38',
             'deleted_at' => '',
@@ -64,6 +68,7 @@ class FileablesSeeder extends Seeder
 
         // Fileable 5
         DB::table('fileables')->insert([
+            'id' => 5,
             'created_at' => '2022-02-06 18:49:16',
             'updated_at' => '2022-02-16 00:28:38',
             'deleted_at' => '',
