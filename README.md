@@ -81,8 +81,8 @@ And you are ready to go.
 - [x] Write tests
 - [x] Create composer package (publish)
 - [x] Create guards example
-- [ ] Create mutations
-- [ ] More tests
+- [x] Create mutations
+- [x] More tests
 - [ ] Subscriptions
 - [ ] Tests for subscribtions
 - [ ] TBA

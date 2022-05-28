@@ -25,3 +25,8 @@ Twill Gate list:
 *   `edit-user`
 *   `publish-user`
 *   `impersonate`
+
+### GraphQL Authentication and Authorization (non Twill)
+
+You can check this awesome tutorial by Toptal developer Christopher Moore.
+[Tutorial](https://www.toptal.com/graphql/laravel-graphql-server-tutorial)
