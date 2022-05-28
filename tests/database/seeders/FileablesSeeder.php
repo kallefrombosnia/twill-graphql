@@ -18,7 +18,7 @@ class FileablesSeeder extends Seeder
         DB::table('fileables')->insert([
             'created_at' => '2022-02-06 18:49:16',
             'updated_at' => '2022-02-16 00:28:38',
-            'deleted_at' => null,
+            'deleted_at' => '',
             'file_id' => 1,
             'fileable_id' => 1, 
             'fileable_type' => 'Twill\Graphql\Tests\Utils\Models\Category',
@@ -30,7 +30,7 @@ class FileablesSeeder extends Seeder
         DB::table('fileables')->insert([
             'created_at' => '2022-02-06 18:49:16',
             'updated_at' => '2022-02-16 00:28:38',
-            'deleted_at' => null,
+            'deleted_at' => '',
             'file_id' => 2,
             'fileable_id' => 2, 
             'fileable_type' => 'Twill\Graphql\Tests\Utils\Models\Category',
@@ -42,7 +42,7 @@ class FileablesSeeder extends Seeder
         DB::table('fileables')->insert([
             'created_at' => '2022-02-06 18:49:16',
             'updated_at' => '2022-02-16 00:28:38',
-            'deleted_at' => null,
+            'deleted_at' => '',
             'file_id' => 3,
             'fileable_id' => 2, 
             'fileable_type' => 'Twill\Graphql\Tests\Utils\Models\Category',
@@ -54,7 +54,7 @@ class FileablesSeeder extends Seeder
         DB::table('fileables')->insert([
             'created_at' => '2022-02-06 18:49:16',
             'updated_at' => '2022-02-16 00:28:38',
-            'deleted_at' => null,
+            'deleted_at' => '',
             'file_id' => 4,
             'fileable_id' => 2, 
             'fileable_type' => 'Twill\Graphql\Tests\Utils\Models\Category',
@@ -66,7 +66,7 @@ class FileablesSeeder extends Seeder
         DB::table('fileables')->insert([
             'created_at' => '2022-02-06 18:49:16',
             'updated_at' => '2022-02-16 00:28:38',
-            'deleted_at' => null,
+            'deleted_at' => '',
             'file_id' => 5,
             'fileable_id' => 2, 
             'fileable_type' => 'Twill\Graphql\Tests\Utils\Models\Category',
