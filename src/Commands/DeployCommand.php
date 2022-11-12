@@ -25,10 +25,10 @@ class DeployCommand extends Command
         $force = $this->option('force');
 
         $lighthouse = config('lighthouse.schema.register');
-        $local = base_path('vendor\kallefrombosnia\twill-graphql\src\schema.graphql');
+        $local = base_path('vendor/kallefrombosnia/twill-graphql/src/schema.graphql');
         
-        $local_twill = base_path('vendor\kallefrombosnia\twill-graphql\src\twill.graphql');
-        $distant_twill = base_path('graphql\twill.graphql');
+        $local_twill = base_path('vendor/kallefrombosnia/twill-graphql/src/twill.graphql');
+        $distant_twill = base_path('graphql/twill.graphql');
 
         // Check if lighthouse config is submitted
         if(!$lighthouse){
