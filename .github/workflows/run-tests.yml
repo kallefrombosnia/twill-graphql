@@ -39,7 +39,7 @@ jobs:
           echo "::add-matcher::${{ runner.tool_cache }}/phpunit.json"
       - name: Install dependencies
         run: |
-          composer require "laravel/framework:${{ matrix.laravel }}" "orchestra/testbench:${{ matrix.testbench }}" -no-interaction --no-update --ignore-platform-reqs --vvv
+          composer require "laravel/framework:${{ matrix.laravel }}" "orchestra/testbench:${{ matrix.testbench }}" -no-interaction --no-update --ignore-platform-reqs -vvv
           composer update --${{ matrix.stability }} --prefer-dist --no-interaction --ignore-platform-reqs -vvv
       - name: List Installed Dependencies
         run: composer show -D
