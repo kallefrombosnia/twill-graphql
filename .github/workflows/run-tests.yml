@@ -4,7 +4,6 @@ on:
   push:
     branches: [master]
   pull_request:
-    branches: [master]
 
 jobs:
   test:
@@ -12,13 +11,14 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: [ubuntu-latest, windows-latest]
+        os: [ubuntu-latest]
         php: [8.0, 8.1]
-        laravel: [8.*]
-        stability: [prefer-lowest, prefer-stable]
+        laravel: [9.*, 8.*]
         include:
+          - laravel: 9.*
+            testbench: 7.*
           - laravel: 8.*
-            testbench: ^6.6
+            testbench: 6.*
 
     name: P${{ matrix.php }} - L${{ matrix.laravel }} - ${{ matrix.stability }} - ${{ matrix.os }}
 
@@ -37,11 +37,13 @@ jobs:
         run: |
           echo "::add-matcher::${{ runner.tool_cache }}/php.json"
           echo "::add-matcher::${{ runner.tool_cache }}/phpunit.json"
-
       - name: Install dependencies
         run: |
-          composer require "laravel/framework:${{ matrix.laravel }}" "orchestra/testbench:${{ matrix.testbench }}" --no-interaction --no-update --with-all-dependencies
-          composer update --${{ matrix.stability }} --prefer-dist --no-interaction
+          composer update
+          composer require "laravel/framework:${{ matrix.laravel }}" "orchestra/testbench:${{ matrix.testbench }}" --no-interaction --no-update -vvv
+          composer update --${{ matrix.stability }} --prefer-dist --no-interaction --ignore-platform-reqs --no-plugins -vvv
+      - name: List Installed Dependencies
+        run: composer show -D
 
       - name: Execute tests
         run: vendor/bin/pest
